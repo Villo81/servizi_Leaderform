@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderform Group: Strategia Packaging Sostenibile</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+.text-cyan-vibrant { color: #00f2fe; }
+.text-magenta-vibrant { color: #fe0979; }
+.text-yellow-vibrant { color: #ffcf00; }
+.bg-cyan-vibrant { background-color: #00f2fe; }
+.bg-magenta-vibrant { background-color: #fe0979; }
+.bg-yellow-vibrant { background-color: #ffcf00; }
+.chart-container { position: relative; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; height: 350px; max-height: 400px; }
+@media (min-width: 768px) { .chart-container { height: 400px; } }
+.glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; }
+.gradient-text { background: linear-gradient(to right, #00f2fe, #fe0979); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+</style>
+</head>
+<body class="antialiased selection:bg-magenta-vibrant selection:text-white">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <header class="text-center mb-16">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight gradient-text">Leaderform Group</h1>
+        <h2 class="text-2xl md:text-3xl font-light text-gray-300 mb-8">Analisi Strategica: Packaging, Normative & Consulenza</h2>
+        <div class="inline-block bg-slate-800 rounded-full px-6 py-2 border border-slate-700 text-sm font-medium">
+            <span class="mr-2">👤</span> Profilo: Consulente Packaging Sostenibile Senior
+        </div>
+    </header>
+
+    <section class="glass-card p-8 mb-16">
+        <h3 class="text-3xl font-bold mb-6 flex items-center"><span class="text-cyan-vibrant mr-3">🏢</span> 1. Il Contesto Leaderform</h3>
+        <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+            Il Gruppo Leaderform si posiziona come partner strategico omnicanale. Le divisioni storiche di Direct Marketing e Stampa Transazionale (per Finance, Utilities, Telco) si integrano sempre più con una divisione <strong class="text-white">Cartotecnica e Packaging</strong> in forte espansione, rivolta a settori come Cosmetica, Fashion, E-commerce e Retail. La sfida e l'opportunità risiedono nell'offrire ai clienti non solo la scatola, ma la "compliance normativa" come servizio a valore aggiunto.
+        </p>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-center">Stima Mix di Business (Impatto su Sostenibilità)</h4>
+                <div class="chart-container">
+                    <canvas id="businessMixChart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-6">Cluster Clienti & Focus Packaging</h4>
+                <ul class="space-y-4">
+                    <li class="bg-slate-800 p-4 rounded-lg border-l-4 border-cyan-vibrant">
+                        <span class="text-xl mr-2">💳</span> <strong>Finance & Utilities:</strong> Packaging transazionale, kit di benvenuto. Necessità di dematerializzazione e carte 100% riciclate (FSC).
+                    </li>
+                    <li class="bg-slate-800 p-4 rounded-lg border-l-4 border-magenta-vibrant">
+                        <span class="text-xl mr-2">💄</span> <strong>Cosmetica & Fashion:</strong> Astucci premium, secondary packaging. Pressione altissima su PPWR per minimizzazione del vuoto e materiali misti.
+                    </li>
+                    <li class="bg-slate-800 p-4 rounded-lg border-l-4 border-yellow-vibrant">
+                        <span class="text-xl mr-2">📦</span> <strong>E-commerce & Retail:</strong> Scatole per spedizioni. Necessità di ottimizzazione logistica, Right-sizing e riciclabilità su scala.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h3 class="text-3xl font-bold mb-8 flex items-center"><span class="text-magenta-vibrant mr-3">⚖️</span> 2. Lo Tsunami Normativo: Impatto sul Packaging</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="glass-card p-6 border-t-4 border-cyan-vibrant">
+                <h4 class="text-2xl font-bold mb-3 text-cyan-vibrant">PPWR</h4>
+                <p class="text-sm text-gray-400 mb-4 font-semibold">Packaging & Packaging Waste Regulation</p>
+                <ul class="text-gray-300 text-sm space-y-2">
+                    <li><span class="text-cyan-vibrant">✔</span> <strong>Riciclabilità:</strong> Tutti gli imballaggi riciclabili su scala entro il 2030 (Design for Recycling).</li>
+                    <li><span class="text-cyan-vibrant">✔</span> <strong>Minimizzazione:</strong> Riduzione peso/volume. Spazio vuoto max 50% nell'e-commerce e imballaggi raggruppati.</li>
+                    <li><span class="text-cyan-vibrant">✔</span> <strong>Bando PFAS:</strong> Attenzione estrema alle carte antigrasso/umidità (es. per cosmesi o food-contact se presente).</li>
+                </ul>
+            </div>
+            
+            <div class="glass-card p-6 border-t-4 border-magenta-vibrant">
+                <h4 class="text-2xl font-bold mb-3 text-magenta-vibrant">CSRD / ESPR</h4>
+                <p class="text-sm text-gray-400 mb-4 font-semibold">Corporate Sustainability Reporting & Ecodesign</p>
+                <ul class="text-gray-300 text-sm space-y-2">
+                    <li><span class="text-magenta-vibrant">✔</span> <strong>Scope 3:</strong> I clienti di Leaderform dovranno rendicontare le emissioni CO2 legate al packaging acquistato. Leaderform deve fornire Dati LCA accurati.</li>
+                    <li><span class="text-magenta-vibrant">✔</span> <strong>DPP (Passaporto Digitale):</strong> Tracciabilità dei materiali. Opportunità per la divisione stampa dati variabili di Leaderform (QR code univoci).</li>
+                </ul>
+            </div>
+            
+            <div class="glass-card p-6 border-t-4 border-yellow-vibrant">
+                <h4 class="text-2xl font-bold mb-3 text-yellow-vibrant">EmpCo</h4>
+                <p class="text-sm text-gray-400 mb-4 font-semibold">Empowering Consumers (Anti-Greenwashing)</p>
+                <ul class="text-gray-300 text-sm space-y-2">
+                    <li><span class="text-yellow-vibrant">✔</span> <strong>Stop Claim Generici:</strong> Vietati termini come "eco-friendly", "verde", "climaticamente neutro" sui pack senza prove scientifiche rigorose.</li>
+                    <li><span class="text-yellow-vibrant">✔</span> <strong>Certificazioni:</strong> Ammessi solo marchi di sostenibilità basati su schemi di certificazione pubblici o riconosciuti.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glass-card p-8">
+            <h4 class="text-xl font-semibold mb-4 text-center">Mappatura del Rischio/Sforzo per Direttiva</h4>
+            <div class="chart-container">
+                <canvas id="radarChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h3 class="text-3xl font-bold mb-8 flex items-center"><span class="text-yellow-vibrant mr-3">🎯</span> 3. Matrice dei Servizi di Consulenza</h3>
+        <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+            Come consulente, l'approccio è "Dual-Track": operare <strong>internamente</strong> sui processi di Leaderform per renderli leader di settore, e creare pacchetti di consulenza che Leaderform possa rivendere o offrire in bundle ai propri <strong>clienti finali</strong> (Brand Owners).
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <div class="glass-card p-8">
+                <h4 class="text-2xl font-bold mb-6 text-cyan-vibrant border-b border-slate-700 pb-2">A. Servizi per LEADERFORM (Interni)</h4>
+                
+                <div class="space-y-6">
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">1. Audit PPWR sul Portafoglio Prodotti</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Analisi delle fustelle, colle, inchiostri e vernici usate attualmente nella divisione cartotecnica.</p>
+                        <p class="text-sm text-cyan-200"><strong>Valore:</strong> Creare una "White List" di materiali pre-approvati per il Design for Recycling (es. Aticelca per l'Italia, standard europei).</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">2. Implementazione Tool LCA (Scope 3)</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Integrare un software di Life Cycle Assessment nei flussi di preventivazione.</p>
+                        <p class="text-sm text-cyan-200"><strong>Valore:</strong> Rispondere alla CSRD. Permettere ai commerciali di fornire preventivi che mostrano non solo l'Euro, ma anche la CO2eq risparmiata rispetto ad alternative.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">3. Formazione R&D & Sales: EmpCo Safe</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Workshop su come comunicare la sostenibilità senza incorrere in greenwashing.</p>
+                        <p class="text-sm text-cyan-200"><strong>Valore:</strong> Evitare che la forza vendita di Leaderform proponga claim illegali sui pack che potrebbero esporre i clienti a sanzioni.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8">
+                <h4 class="text-2xl font-bold mb-6 text-magenta-vibrant border-b border-slate-700 pb-2">B. Servizi per i CLIENTI (Tramite Leaderform)</h4>
+                
+                <div class="space-y-6">
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">1. "Right-Sizing & Void Reduction" Workshop</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Target:</strong> Clienti E-commerce, Cosmetica.</p>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Consulenza ingegneristica per riprogettare le scatole, riducendo le dimensioni per rispettare il limite PPWR del 50% di spazio vuoto.</p>
+                        <p class="text-sm text-magenta-200"><strong>Valore:</strong> Meno costi logistici per il cliente, compliance immediata PPWR.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">2. Green Claim Validation (EmpCo)</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Target:</strong> Brand Retail & FMCG.</p>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Servizio legale-tecnico per verificare che la grafica stampata da Leaderform (es. loghi ambientali, testi) sia conforme all'EmpCo.</p>
+                        <p class="text-sm text-magenta-200"><strong>Valore:</strong> Tutela legale del Brand; Leaderform diventa garante di sicurezza.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h5 class="text-lg font-bold text-white mb-2">3. Progetto Pilota DPP (Digital Product Passport)</h5>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Target:</strong> Fashion & Luxury Brands.</p>
+                        <p class="text-sm text-gray-400 mb-2"><strong>Azione:</strong> Unire la forza cartotecnica con la forza dati transazionali di Leaderform per stampare QR univoci serializzati su ogni astuccio.</p>
+                        <p class="text-sm text-magenta-200"><strong>Valore:</strong> Preparazione all'ESPR, tracciabilità contro la contraffazione.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="glass-card p-8 mb-16">
+        <h3 class="text-2xl font-bold mb-6 text-center">Matrice Valore/Impatto dei Servizi Proposti</h3>
+        <p class="text-center text-gray-400 mb-8 text-sm">Dimensione bolla = Urgenza Normativa. Asse X = Complessità di sviluppo. Asse Y = Valore aggiunto percepito dal mercato.</p>
+        <div class="chart-container" style="max-width: 900px; height: 450px;">
+            <canvas id="bubbleChart"></canvas>
+        </div>
+    </section>
+
+    <footer class="text-center text-gray-500 text-sm mt-12 border-t border-slate-800 pt-8">
+        <p>Analisi strategica indipendente basata sui framework normativi PPWR, CSRD, ESPR e EmpCo. Dati simulati per scopo di progettazione consulenziale.</p>
+    </footer>
+
+</div>
+
+<script>
+    Chart.defaults.color = '#94a3b8';
+    Chart.defaults.font.family = 'Inter, sans-serif';
+
+    const ctxDonut = document.getElementById('businessMixChart').getContext('2d');
+    new Chart(ctxDonut, {
+        type: 'doughnut',
+        data: {
+            labels: [['Direct Marketing', '& Data'], ['Packaging &', 'Cartotecnica'], ['Stampa', 'Transazionale']],
+            datasets: [{
+                data: [40, 35, 25],
+                backgroundColor: ['#00f2fe', '#fe0979', '#ffcf00'],
+                borderWidth: 0,
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '70%',
+            plugins: {
+                legend: { position: 'bottom', labels: { color: '#f8fafc', padding: 20 } },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    const ctxRadar = document.getElementById('radarChart').getContext('2d');
+    new Chart(ctxRadar, {
+        type: 'radar',
+        data: {
+            labels: [['Impatto su', 'Costi Materiali'], ['Rischio', 'Sanzioni (Brands)'], ['Necessità', 'Riprogettazione'], ['Richiesta', 'Dati (Scope 3)'], ['Rischio', 'Greenwashing']],
+            datasets: [
+                {
+                    label: 'PPWR',
+                    data: [9, 8, 10, 4, 3],
+                    backgroundColor: 'rgba(0, 242, 254, 0.2)',
+                    borderColor: '#00f2fe',
+                    pointBackgroundColor: '#00f2fe',
+                    borderWidth: 2
+                },
+                {
+                    label: 'CSRD/ESPR',
+                    data: [3, 6, 5, 10, 5],
+                    backgroundColor: 'rgba(254, 9, 121, 0.2)',
+                    borderColor: '#fe0979',
+                    pointBackgroundColor: '#fe0979',
+                    borderWidth: 2
+                },
+                {
+                    label: 'EmpCo',
+                    data: [2, 9, 7, 2, 10],
+                    backgroundColor: 'rgba(255, 207, 0, 0.2)',
+                    borderColor: '#ffcf00',
+                    pointBackgroundColor: '#ffcf00',
+                    borderWidth: 2
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                r: {
+                    angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    pointLabels: { color: '#e2e8f0', font: { size: 12 } },
+                    ticks: { display: false, min: 0, max: 10 }
+                }
+            },
+            plugins: {
+                legend: { position: 'top', labels: { color: '#f8fafc' } },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    const ctxBubble = document.getElementById('bubbleChart').getContext('2d');
+    new Chart(ctxBubble, {
+        type: 'bubble',
+        data: {
+            datasets: [
+                {
+                    label: 'Audit PPWR Interno',
+                    data: [{ x: 3, y: 8, r: 25 }],
+                    backgroundColor: 'rgba(0, 242, 254, 0.7)',
+                    borderColor: '#00f2fe'
+                },
+                {
+                    label: 'Right-Sizing Clienti',
+                    data: [{ x: 6, y: 9, r: 35 }],
+                    backgroundColor: 'rgba(254, 9, 121, 0.7)',
+                    borderColor: '#fe0979'
+                },
+                {
+                    label: 'Tool LCA Scope 3',
+                    data: [{ x: 8, y: 7, r: 20 }],
+                    backgroundColor: 'rgba(255, 207, 0, 0.7)',
+                    borderColor: '#ffcf00'
+                },
+                {
+                    label: 'Pilota DPP (Passaporto)',
+                    data: [{ x: 9, y: 8, r: 15 }],
+                    backgroundColor: 'rgba(0, 250, 154, 0.7)',
+                    borderColor: '#00fa9a'
+                },
+                {
+                    label: 'Validazione Green Claims',
+                    data: [{ x: 4, y: 6, r: 30 }],
+                    backgroundColor: 'rgba(168, 85, 247, 0.7)',
+                    borderColor: '#a855f7'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    title: { display: true, text: 'Complessità Implementazione (1 = Bassa, 10 = Alta)', color: '#f8fafc' },
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    min: 0, max: 10
+                },
+                y: {
+                    title: { display: true, text: 'Valore Aggiunto / Marginalità (1 = Basso, 10 = Alto)', color: '#f8fafc' },
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    min: 0, max: 10
+                }
+            },
+            plugins: {
+                legend: { position: 'bottom', labels: { color: '#f8fafc', boxWidth: 12 } },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': (Comp: ' + context.parsed.x + ', Valore: ' + context.parsed.y + ')';
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
